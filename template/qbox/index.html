@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <title>My amazing site</title>
+</head>
+<h1> THE LIST OF EFFING QUESTIONS </h1>
+<div id="header" >
+<p>Some text here </p>
+</div>
+
+<div>
+{% if obj %}
+		<ul>
+		{% for text in obj %}
+				<li><a href="/question/{{ text.id }}/"> {{ text.question_text }} </a> </li>
+
+		{% endfor %}
+
+		</ul>
+
+{% else %}
+		<p> Currently, no questions are available </p>
+
+{% endif %}
+</div>
+
