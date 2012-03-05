@@ -3,6 +3,13 @@
 <head>
        <title>My amazing site</title>
 </head>
+
+{% if auth %}
+<p> Hello , logged in guy! </p>
+{% else %}
+<p> Hello, Anonymous </p>
+{% endif %}
+
 <h1> THE LIST OF EFFING QUESTIONS </h1>
 <div id="header" >
 <p>Some text here </p>
